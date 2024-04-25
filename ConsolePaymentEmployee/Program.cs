@@ -24,16 +24,16 @@ namespace ConsolePaymentEmployee {
                 double valueperhour = double.Parse(Console.ReadLine());
 
                 if (outSourced == "y")
-                {
-                    
+                {                    
                     outSourcedEmployee.valeuPerHour = valueperhour;
                     outSourcedEmployee.hours = hour;
                     outSourcedEmployee.name = name;
+                    Console.WriteLine("Addtional Charge: ");
+                    double addtionalCharge = double.Parse(Console.ReadLine());
+                    outSourcedEmployee.addtionalCharge = addtionalCharge;
                     outSourcedEmployee.AddEmployee(outSourcedEmployee);
-                }
-                else
-                {
-                    
+                } else
+                {                    
                     outSourcedEmployee.valeuPerHour = valueperhour;
                     outSourcedEmployee.hours = hour;
                     outSourcedEmployee.name = name;
